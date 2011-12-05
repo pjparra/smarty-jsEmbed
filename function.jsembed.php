@@ -26,7 +26,7 @@ function smarty_function_jsembed($params, &$smarty)
 		else {
 			$urlQuery = '';
 		}
-		return '<script src="' . $params['src'] . $urlQuery . '"></script>';
+		return '<script src="' . $url['path'] . $urlQuery . '"></script>';
 	}
 	// Small file, let's embed it directly on the page
 	else {
